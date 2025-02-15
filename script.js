@@ -6,7 +6,7 @@ function speak(text) {
     let text_speak = new SpeechSynthesisUtterance(text);
     
     text_speak.rate = 1;   // normal speed
-    text_speak.pitch = 1;  // normal pitch
+    text_speak.pitch = 0.5;  // normal pitch
     text_speak.volume = 1; // full volume
     text_speak.lang = "hi-GB";  // Awaaz ladki ki karne ke liye (For female voice)
     
@@ -77,7 +77,7 @@ function takeCommand(transcript) {
         speak("gyan sagar school  ");
     }
     else if (transcript.includes("hello")) {
-        speak("anil jarat\ is ravan man ");
+        speak("hy ");
     }
     
 
